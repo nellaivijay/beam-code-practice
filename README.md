@@ -306,6 +306,25 @@ Interactive Jupyter notebooks for hands-on learning:
 - [Generate Sample Data](scripts/generate_sample_data.py) - Generate realistic pipeline data
 - [Load Sample Data](scripts/load_sample_data.py) - Load sample data for pipelines
 
+## 🔗 Related Practice Repositories
+
+Continue your learning journey with these related repositories:
+
+### AI/ML Practice
+- [🤖 DSPy Code Practice](https://github.com/nellaivijay/dspy-code-practice) - Declarative LLM programming
+- [🧠 LLM Fine-Tuning Practice](https://github.com/nellaivijay/llm-fine-tuning-practice) - Model fine-tuning techniques
+
+### Data Engineering Practice
+- [🦆 DuckDB Code Practice](https://github.com/nellaivijay/duckdb-code-practice) - Analytics & SQL optimization
+- [⚡ Apache Spark Code Practice](https://github.com/nellaivijay/spark-code-practice) - Big data processing
+- [🏔️ Apache Iceberg Code Practice](https://github.com/nellaivijay/iceberg-code-practice) - Lakehouse architecture
+
+### Programming Practice
+- [⚙️ Scala Data Analysis Practice](https://github.com/nellaivijay/scala-dataanalysis-code-practice) - Functional programming
+
+### Resource Hub
+- [📚 Awesome My Notes](https://github.com/nellaivijay/awesome-my-notes) - Comprehensive technical notes and learning resources
+
 ## 🆘 Vendor Independence
 
 This environment uses only Apache 2.0 licensed tools:
