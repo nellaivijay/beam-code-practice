@@ -1,0 +1,6 @@
+apache-beam[gcp]
+jupyter
+pandas
+numpy
+pytest
+pytest-timeout
