@@ -285,16 +285,22 @@ pipeline_options = {
 
 ## 📚 Documentation
 
+### 📖 Wiki
+Comprehensive wiki documentation is available with detailed guides:
+- [Wiki Home](docs/wiki/Home.html) - Main wiki page with complete guide
+- [Lab 0: Sample Data Setup](docs/wiki/Lab-0-Sample-Data-Setup.html) - Data generation and loading
+- [Lab 1: Environment Setup](docs/wiki/Lab-1-Environment-Setup.html) - Installation and configuration
+
 ### 🎓 Educational Resources
 
 **Wiki Guides** (Comprehensive learning materials):
-- [Wiki Home](https://github.com/nellaivijay/beam-code-practice/wiki) - Main wiki page with all guides
-- [Getting Started Guide](https://github.com/nellaivijay/beam-code-practice/wiki/Getting-Started) - Complete setup and first steps
-- [Apache Beam Fundamentals](https://github.com/nellaivijay/beam-code-practice/wiki/Apache-Beam-Fundamentals) - Core concepts and architecture
-- [Lab Guides](https://github.com/nellaivijay/beam-code-practice/wiki/Lab-Guides) - Detailed lab walkthroughs
-- [Learning Path](https://github.com/nellaivijay/beam-code-practice/wiki/Learning-Path) - Recommended learning sequence
-- [Best Practices](https://github.com/nellaivijay/beam-code-practice/wiki/Best-Practices) - Production-ready patterns
-- [Troubleshooting](https://github.com/nellaivijay/beam-code-practice/wiki/Troubleshooting) - Common issues and solutions
+- [Wiki Home](docs/wiki/Home.html) - Main wiki page with all guides
+- [Getting Started Guide](docs/wiki/Home.html#getting-started) - Complete setup and first steps
+- [Apache Beam Fundamentals](docs/wiki/Home.html#technical-concepts) - Core concepts and architecture
+- [Lab Guides](docs/wiki/Home.html#lab-documentation) - Detailed lab walkthroughs
+- [Learning Path](docs/wiki/Home.html#learning-path) - Recommended learning sequence
+- [Best Practices](docs/wiki/Home.html#troubleshooting) - Production-ready patterns
+- [Troubleshooting](docs/wiki/Home.html#troubleshooting) - Common issues and solutions
 
 ### Core Documentation
 - [Setup Guide](docs/SETUP_GUIDE.md) - Detailed setup instructions for Python and Java
