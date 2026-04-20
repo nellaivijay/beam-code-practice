@@ -1,6 +1,35 @@
-apache-beam[gcp]
-jupyter
-pandas
-numpy
-pytest
-pytest-timeout
+# Apache Beam
+apache-beam[gcp]>=2.50.0
+
+# Jupyter and notebook support
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Testing and development
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-timeout>=2.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Notebook formatting
+nbqa>=1.7.0
+ruff>=0.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+requests>=2.31.0
+
+# Optional: For specific runners
+# apache-beam[spark]  # For Spark runner
+# apache-beam[flink]  # For Flink runner
+# apache-beam[interactive]  # For interactive beam

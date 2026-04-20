@@ -1,5 +1,29 @@
 # Apache Beam Code Practice
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Apache Beam](https://img.shields.io/badge/Apache%20Beam-Latest-green)](https://beam.apache.org/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)](https://jupyter.org/)
+
+## 📖 Table of Contents
+
+- [🎯 Educational Mission](#-educational-mission)
+- [🎓 Why This Repository?](#-why-this-repository)
+- [🎓 Learning Approach](#-learning-approach)
+- [🏗️ Architecture](#-architecture)
+- [🛠️ Core Stack](#️-core-stack)
+- [🎓 Lab Structure](#-lab-structure)
+- [💾 Sample Data](#-sample-data)
+- [🚀 Quick Start](#-quick-start)
+- [📋 Requirements](#-requirements)
+- [🔧 Configuration](#-configuration)
+- [📚 Documentation](#-documentation)
+- [🔗 Related Practice Repositories](#-related-practice-repositories)
+- [🆘 Vendor Independence](#-vendor-independence)
+- [🤝 Contributing](#-contributing)
+- [👥 Community and Learning](#-community-and-learning)
+- [📄 License](#-license)
+
 ## 🎯 Educational Mission
 
 A comprehensive, vendor-independent Apache Beam learning environment designed for developers, data engineers, and analysts who want to master modern data pipeline engineering through hands-on practice.
