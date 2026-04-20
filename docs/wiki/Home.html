@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache Beam Code Practice Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0083b0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0083b0;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        
+        a {
+            color: #0083b0;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Apache Beam Code Practice Wiki</h1>
+            <p>Comprehensive Documentation for Hands-on Learning</p>
+        </header>
+        
+        <div class="content">
+            <a href="../index.html" class="back-link">← Back to Home</a>
+            
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#lab-documentation">Lab Documentation</a></li>
+                <li><a href="#learning-path">Learning Path</a></li>
+                <li><a href="#technical-concepts">Technical Concepts</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#contributing">Contributing</a></li>
+            </ul>
+
+            <h2 id="getting-started">Getting Started</h2>
+            
+            <h3>Prerequisites</h3>
+            <p>Before starting with the Apache Beam labs, ensure you have:</p>
+            <ul>
+                <li>Python 3.8 or higher installed</li>
+                <li>pip (Python package manager)</li>
+                <li>Basic knowledge of Python programming</li>
+                <li>Understanding of data processing concepts</li>
+            </ul>
+
+            <h3>Installation</h3>
+            <p>1. Clone the repository:</p>
+            <pre><code>git clone https://github.com/nellaivijay/beam-code-practice.git
+cd beam-code-practice</code></pre>
+
+            <p>2. Install dependencies:</p>
+            <pre><code>pip install -r requirements.txt</code></pre>
+
+            <p>3. Generate sample data:</p>
+            <pre><code>python scripts/generate_sample_data.py</code></pre>
+
+            <h3>Quick Start</h3>
+            <p>Start with Lab 0 to generate sample data, then proceed to Lab 1 for environment setup.</p>
+
+            <h2 id="lab-documentation">Lab Documentation</h2>
+            
+            <h3>Beginner Labs</h3>
+            <ul>
+                <li><a href="Lab-0-Sample-Data-Setup.html">Lab 0: Sample Data Setup</a> - Generate and load sample data</li>
+                <li><a href="Lab-1-Environment-Setup.html">Lab 1: Environment Setup</a> - Install and configure Apache Beam</li>
+                <li>Lab 2: Pipeline Fundamentals - Learn core pipeline concepts</li>
+            </ul>
+
+            <h3>Intermediate Labs</h3>
+            <ul>
+                <li>Lab 3: Core Transforms - Master ParDo, Map, Filter, and Combine</li>
+                <li>Lab 4: I/O Connectors - Read from and write to various data sources</li>
+                <li>Lab 5: Windowing and Triggers - Time-based data processing</li>
+                <li>Lab 6: State and Timers - Stateful processing patterns</li>
+            </ul>
+
+            <h3>Advanced Labs</h3>
+            <ul>
+                <li>Lab 7: Streaming Pipelines - Real-time data processing</li>
+                <li>Lab 8: Pipeline Testing - Testing strategies and patterns</li>
+                <li>Lab 9: Production Deployment - Deploy to production runners</li>
+                <li>Lab 10: Monitoring and Operations - Pipeline monitoring and optimization</li>
+            </ul>
+
+            <h2 id="learning-path">Learning Path</h2>
+            
+            <h3>Phase 1: Foundation (Labs 0-2)</h3>
+            <p><strong>Duration</strong>: 2-3 hours<br>
+            <strong>Focus</strong>: Setup, basic concepts, and simple pipelines</p>
+            
+            <ol>
+                <li>Complete Lab 0: Sample Data Setup</li>
+                <li>Complete Lab 1: Environment Setup</li>
+                <li>Complete Lab 2: Pipeline Fundamentals</li>
+            </ol>
+
+            <p><strong>Skills Gained</strong>:</p>
+            <ul>
+                <li>Apache Beam installation and configuration</li>
+                <li>Understanding of Pipeline and PCollection concepts</li>
+                <li>Basic transform operations (Create, Map, Filter)</li>
+            </ul>
+
+            <h3>Phase 2: Core Skills (Labs 3-4)</h3>
+            <p><strong>Duration</strong>: 3-4 hours<br>
+            <strong>Focus</strong>: Advanced transforms and I/O operations</p>
+            
+            <ol>
+                <li>Complete Lab 3: Core Transforms</li>
+                <li>Complete Lab 4: I/O Connectors</li>
+            </ol>
+
+            <p><strong>Skills Gained</strong>:</p>
+            <ul>
+                <li>Custom DoFn implementation</li>
+                <li>GroupByKey and Combine operations</li>
+                <li>File-based I/O patterns</li>
+                <li>Working with different data formats</li>
+            </ul>
+
+            <h3>Phase 3: Advanced Concepts (Labs 5-6)</h3>
+            <p><strong>Duration</strong>: 4-5 hours<br>
+            <strong>Focus</strong>: Windowing, state management, and streaming concepts</p>
+            
+            <ol>
+                <li>Complete Lab 5: Windowing and Triggers</li>
+                <li>Complete Lab 6: State and Timers</li>
+            </ol>
+
+            <p><strong>Skills Gained</strong>:</p>
+            <ul>
+                <li>Time-based windowing strategies</li>
+                <li>Trigger mechanisms</li>
+                <li>Stateful processing</li>
+                <li>Timer management</li>
+            </ul>
+
+            <h3>Phase 4: Production Readiness (Labs 7-10)</h3>
+            <p><strong>Duration</strong>: 5-6 hours<br>
+            <strong>Focus</strong>: Streaming, testing, deployment, and operations</p>
+            
+            <ol>
+                <li>Complete Lab 7: Streaming Pipelines</li>
+                <li>Complete Lab 8: Pipeline Testing</li>
+                <li>Complete Lab 9: Production Deployment</li>
+                <li>Complete Lab 10: Monitoring and Operations</li>
+            </ol>
+
+            <p><strong>Skills Gained</strong>:</p>
+            <ul>
+                <li>Streaming pipeline development</li>
+                <li>Testing strategies</li>
+                <li>Production deployment</li>
+                <li>Monitoring and optimization</li>
+            </ul>
+
+            <h2 id="technical-concepts">Technical Concepts</h2>
+            
+            <h3>Apache Beam Fundamentals</h3>
+            
+            <h4>Pipeline</h4>
+            <p>A Pipeline encapsulates your entire data processing workflow. It defines the sequence of operations that will be applied to your data.</p>
+
+            <h4>PCollection</h4>
+            <p>A PCollection represents a distributed dataset that your pipeline will process. It can be bounded (finite) or unbounded (infinite).</p>
+
+            <h4>Transforms</h4>
+            <p>Transforms are operations that process PCollections to produce new PCollections. Common transforms include:</p>
+            <ul>
+                <li><strong>Map</strong>: Apply a function to each element</li>
+                <li><strong>Filter</strong>: Keep elements that meet a condition</li>
+                <li><strong>ParDo</strong>: Parallel processing with custom logic</li>
+                <li><strong>GroupByKey</strong>: Group values by their keys</li>
+                <li><strong>Combine</strong>: Efficient aggregation operations</li>
+            </ul>
+
+            <h3>Pipeline Runners</h3>
+            <p>Apache Beam supports multiple execution runners:</p>
+            <ul>
+                <li><strong>DirectRunner</strong>: Local execution for development and testing</li>
+                <li><strong>DataflowRunner</strong>: Google Cloud managed service</li>
+                <li><strong>SparkRunner</strong>: Apache Spark execution engine</li>
+                <li><strong>FlinkRunner</strong>: Apache Flink execution engine</li>
+            </ul>
+
+            <h3>Windowing</h3>
+            <p>Windowing divides streaming data into finite buckets based on time or other criteria:</p>
+            <ul>
+                <li>Fixed windows</li>
+                <li>Sliding windows</li>
+                <li>Session windows</li>
+                <li>Global windows</li>
+            </ul>
+
+            <h2 id="troubleshooting">Troubleshooting</h2>
+            
+            <h3>Common Issues</h3>
+            
+            <h4>Installation Errors</h4>
+            <p>If you encounter installation errors, try:</p>
+            <pre><code>pip install --upgrade pip
+pip install apache-beam[gcp]</code></pre>
+
+            <h4>Memory Issues</h4>
+            <p>For large datasets, increase memory allocation:</p>
+            <pre><code>export BEAM_DIRECT-runner_memory=4g</code></pre>
+
+            <h4>Import Errors</h4>
+            <p>Ensure you're using Python 3.8+ and have installed all dependencies.</p>
+
+            <h2 id="contributing">Contributing</h2>
+            <p>We welcome contributions to improve the Apache Beam Code Practice repository. Please see the main repository for contribution guidelines.</p>
+
+            <h2 id="resources">Resources</h2>
+            <ul>
+                <li><a href="https://beam.apache.org/documentation/">Apache Beam Official Documentation</a></li>
+                <li><a href="https://github.com/apache/beam">Apache Beam GitHub Repository</a></li>
+                <li><a href="https://beam.apache.org/documentation/programming-guide/">Apache Beam Programming Guide</a></li>
+                <li><a href="https://beam.apache.org/blog/">Apache Beam Blog</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Built for the data engineering community | <a href="https://github.com/nellaivijay/beam-code-practice">Apache Beam Code Practice</a></p>
+        </div>
+    </div>
+</body>
+</html>

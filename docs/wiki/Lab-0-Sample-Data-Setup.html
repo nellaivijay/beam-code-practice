@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 0: Sample Data Setup - Apache Beam Code Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0083b0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #0083b0;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        
+        a {
+            color: #0083b0;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lab 0: Sample Data Setup</h1>
+            <p>Apache Beam Code Practice</p>
+        </header>
+        
+        <div class="content">
+            <a href="Home.html" class="back-link">← Back to Wiki Home</a>
+            
+            <h2>Overview</h2>
+            <p>This lab guides you through generating and loading sample data that will be used throughout the Apache Beam learning labs. Having realistic sample data is essential for understanding pipeline concepts and practicing data transformations.</p>
+
+            <h2>Learning Objectives</h2>
+            <ul>
+                <li>Generate realistic sample data for pipeline processing</li>
+                <li>Understand data formats suitable for Apache Beam pipelines</li>
+                <li>Set up data directory structure</li>
+                <li>Validate data integrity</li>
+            </ul>
+
+            <h2>Prerequisites</h2>
+            <ul>
+                <li>Python 3.8+</li>
+                <li>Basic understanding of CSV and JSON formats</li>
+            </ul>
+
+            <h2>Setup Instructions</h2>
+            
+            <h3>1. Generate Sample Data</h3>
+            <p>Run the sample data generation script:</p>
+            <pre><code>python scripts/generate_sample_data.py</code></pre>
+
+            <p>This script creates several datasets in the <code>data/</code> directory:</p>
+            <ul>
+                <li><code>sample_sales.csv</code> - Sales transaction data</li>
+                <li><code>customer_data.csv</code> - Customer information</li>
+                <li><code>product_data.csv</code> - Product catalog</li>
+                <li><code>streaming_events.csv</code> - Simulated streaming events</li>
+                <li><code>sensor_readings.csv</code> - IoT sensor data</li>
+            </ul>
+
+            <h3>2. Data Structure</h3>
+            <p>The generated data follows this structure:</p>
+            <pre><code>data/
+├── sample_sales.csv          # Sales transactions
+├── customer_data.csv          # Customer information
+├── product_data.csv           # Product catalog
+├── streaming_events.csv       # Streaming event data
+└── sensor_readings.csv        # Sensor readings</code></pre>
+
+            <h3>3. Data Validation</h3>
+            <p>Validate that the data has been generated correctly:</p>
+            <pre><code>import pandas as pd
+import os
+
+# Check if files exist
+data_dir = 'data/'
+files = os.listdir(data_dir)
+print(f"Generated files: {files}")
+
+# Load and inspect sales data
+sales_df = pd.read_csv('data/sample_sales.csv')
+print(f"Sales records: {len(sales_df)}")
+print(sales_df.head())</code></pre>
+
+            <h2>Data Formats</h2>
+            
+            <h3>CSV Format</h3>
+            <p>Most sample data is provided in CSV format for easy loading:</p>
+            <pre><code>import pandas as pd
+
+df = pd.read_csv('data/sample_sales.csv')</code></pre>
+
+            <h3>JSON Format</h3>
+            <p>Some data is available in JSON format for flexibility:</p>
+            <pre><code>import json
+
+with open('data/config.json', 'r') as f:
+    config = json.load(f)</code></pre>
+
+            <h2>Using Sample Data in Pipelines</h2>
+            
+            <h3>Loading Data</h3>
+            <pre><code>import apache_beam as beam
+import pandas as pd
+
+# Load CSV data
+df = pd.read_csv('data/sample_sales.csv')
+data = df.to_dict('records')
+
+# Use in pipeline
+with beam.Pipeline() as pipeline:
+    (pipeline
+     | 'Create data' >> beam.Create(data)
+     | 'Process' >> beam.Map(lambda x: x['quantity'] * x['price'])
+     | 'Print' >> beam.Map(print))</code></pre>
+
+            <h3>Streaming Data</h3>
+            <p>For streaming exercises, use the streaming events data:</p>
+            <pre><code>streaming_df = pd.read_csv('data/streaming_events.csv')
+streaming_data = streaming_df.to_dict('records')</code></pre>
+
+            <h2>Custom Data Generation</h2>
+            <p>You can generate custom data for specific scenarios:</p>
+            <pre><code>import pandas as pd
+import random
+from datetime import datetime, timedelta
+
+# Generate custom sales data
+custom_data = []
+for i in range(100):
+    record = {
+        'transaction_id': f'txn_{i}',
+        'customer_id': f'customer_{random.randint(1, 20)}',
+        'product_id': f'product_{random.randint(1, 10)}',
+        'quantity': random.randint(1, 5),
+        'price': random.uniform(10, 100),
+        'timestamp': datetime.now().isoformat()
+    }
+    custom_data.append(record)
+
+df = pd.DataFrame(custom_data)
+df.to_csv('data/custom_sales.csv', index=False)</code></pre>
+
+            <h2>Troubleshooting</h2>
+            
+            <h3>Data Not Generated</h3>
+            <p>If the data generation script fails:</p>
+            <ol>
+                <li>Check that you have write permissions to the <code>data/</code> directory</li>
+                <li>Ensure all required Python packages are installed</li>
+                <li>Check for error messages in the script output</li>
+            </ol>
+
+            <h3>Data Loading Errors</h3>
+            <p>If you encounter errors loading data:</p>
+            <ol>
+                <li>Verify file paths are correct</li>
+                <li>Check that files are not corrupted</li>
+                <li>Ensure CSV files have proper headers</li>
+                <li>Validate data types match expectations</li>
+            </ol>
+
+            <h2>Next Steps</h2>
+            <p>After completing this lab:</p>
+            <ol>
+                <li>Verify all sample data files are present</li>
+                <li>Inspect the data structure and content</li>
+                <li>Proceed to <a href="Lab-1-Environment-Setup.html">Lab 1: Environment Setup</a></li>
+            </ol>
+
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://beam.apache.org/documentation/io/io-templates/">Apache Beam I/O Documentation</a></li>
+                <li><a href="https://beam.apache.org/documentation/programming-guide/#reading-input-data">Data Formats Guide</a></li>
+                <li><a href="https://beam.apache.org/documentation/programming-guide/#creating-a-pcollection">Sample Data Best Practices</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Built for the data engineering community | <a href="https://github.com/nellaivijay/beam-code-practice">Apache Beam Code Practice</a></p>
+        </div>
+    </div>
+</body>
+</html>
